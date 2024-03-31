@@ -28,66 +28,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libqmi_cci",
-	owner: "lge",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmi_common_so",
-	owner: "lge",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmi_common_so.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmi_common_so.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmiservices",
-	owner: "lge",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmiservices.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmiservices.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libthermalclient",
 	owner: "lge",
 	strip: {
@@ -159,16 +99,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
-	owner: "lge",
-	apk: "proprietary/system/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "VZWAPNLib",
 	owner: "lge",
 	apk: "proprietary/system/app/VZWAPNLib/VZWAPNLib.apk",
@@ -212,17 +142,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "qcrilmsgtunnel",
-	owner: "lge",
-	apk: "proprietary/system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "CneApp",
 	owner: "lge",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -245,9 +164,32 @@ android_app_import {
 }
 
 android_app_import {
+	name: "QtiTelephonyService",
+	owner: "lge",
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "dpmserviceapp",
 	owner: "lge",
 	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "lge",
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -263,18 +205,6 @@ dex_import {
 }
 
 dex_import {
-	name: "qcrilhook",
-	owner: "lge",
-	jars: ["proprietary/system/framework/qcrilhook.jar"],
-}
-
-dex_import {
-	name: "qti-telephony-common",
-	owner: "lge",
-	jars: ["proprietary/system/framework/qti-telephony-common.jar"],
-}
-
-dex_import {
 	name: "com.qti.dpmframework",
 	owner: "lge",
 	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
@@ -285,6 +215,20 @@ dex_import {
 	name: "dpmapi",
 	owner: "lge",
 	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "lge",
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "lge",
+	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
 	system_ext_specific: true,
 }
 
