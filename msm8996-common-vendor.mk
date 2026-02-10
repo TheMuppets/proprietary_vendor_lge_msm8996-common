@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lge/msm8996-common
 
 PRODUCT_COPY_FILES += \
-    vendor/lge/msm8996-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/lge/msm8996-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/lge/msm8996-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/lge/msm8996-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
@@ -66,30 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/system/etc/permissions/com.vzw.vzwapnlib.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.vzw.vzwapnlib.xml \
     vendor/lge/msm8996-common/proprietary/system/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
     vendor/lge/msm8996-common/proprietary/system/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@1.0-service \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/mm-pp-dpps:$(TARGET_COPY_OUT_VENDOR)/bin/mm-pp-dpps \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
-    vendor/lge/msm8996-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
     vendor/lge/msm8996-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/lge/msm8996-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/lge/msm8996-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -152,6 +127,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn \
     vendor/lge/msm8996-common/proprietary/vendor/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/cdmaless/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/cdmaless/mcfg_sw.mbn \
     vendor/lge/msm8996-common/proprietary/vendor/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/image/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libpn548ad_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn548ad_fw.so \
     vendor/lge/msm8996-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
@@ -159,9 +135,11 @@ PRODUCT_PACKAGES += \
     lgkm.msm8996 \
     libFileMux \
     libdiag_system \
+    libkeystore_binder \
     liblgkm \
     libmmosal \
     libmmparser_lite \
+    libsecureks \
     vulkan.msm8996 \
     libOmxMux \
     eglSubDriverAndroid \
@@ -191,6 +169,7 @@ PRODUCT_PACKAGES += \
     libbccQTI \
     libc2d30_bltlib \
     libcir_driver \
+    libconfigdb \
     libdiag \
     libdsi_netctrl \
     libdsutils \
@@ -203,6 +182,7 @@ PRODUCT_PACKAGES += \
     libllvm-qcom \
     libmdmdetect \
     libmdsprpc \
+    libnetmgr \
     libpcas_vendor \
     libperfgluelayer \
     libperipheral_client \
@@ -240,20 +220,18 @@ PRODUCT_PACKAGES += \
     libts_detected_face_hal \
     libts_face_beautify_hal \
     libuicc_vendor \
-    libvss_common_core \
     libvss_common_idl \
     libvss_common_iface \
     libvss_dmi_qcci \
     libvss_gnss_qcci \
     libvss_ims_qcci \
-    libvss_nv_core \
     libvss_nv_idl \
     libvss_nv_iface \
-    libvss_resim_core \
     libvss_resim_idl \
     libvss_resim_iface \
     libvssims-impl \
     libwifi-hal-ctrl \
+    libxml \
     sensors.ssc \
     libqcbassboost \
     libqcreverb \
@@ -273,23 +251,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.0_vendor \
     vendor.qti.hardware.radio.uim_remote_server@1.0_vendor \
     vendor.qti.hardware.tui_comm@1.0_vendor \
-    libOmxVideoDSMode \
     libOmxVpp \
     libadm \
     libchromaflash \
     libcppf \
     libmmcamera_chromaflash_lib \
-    libmmcamera_llvd \
     libmmcamera_optizoom_lib \
-    libmmcamera_quadracfa \
     libmmcamera_stillmore_lib \
     libmmcamera_trueportrait_lib \
     libmmcamera_ubifocus_lib \
     libmmosal_proprietary \
     liboptizoom \
-    libpn548ad_fw \
     libqct_resampler \
-    libremosaic_daemon \
     libshim_camera \
     libsymphony-1.1.2 \
     libsymphony-1.1.3 \
@@ -299,6 +272,7 @@ PRODUCT_PACKAGES += \
     libubifocus \
     libvpplibrary \
     libvqzip \
+    android.system.net.netd@1.0_vendor \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     sensors.vr \
     vendor.qti.gnss@3.0-impl \
@@ -310,7 +284,6 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
-    libconfigdb \
     libdataitems \
     libdisp-aba \
     libdpmqmihal \
@@ -326,7 +299,6 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
-    libnetmgr \
     libpdmapper \
     libqdma_file_agent \
     libril-qc-ltedirectdisc \
@@ -343,17 +315,18 @@ PRODUCT_PACKAGES += \
     libthermalioctl \
     libtime_genoff \
     libvss_bsp_qcci \
+    libvss_common_core \
+    libvss_nv_core \
+    libvss_resim_core \
     libwms \
     libwqe \
     libwvhidl \
-    libxml \
     libxtadapter \
     libwvdrmengine \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
     vendor.display.postproc@1.0 \
-    vendor.qti.data.factory@1.0 \
     vendor.qti.data.factory@2.0 \
     vendor.qti.gnss@3.0-service \
     vendor.qti.hardware.cacert@1.0 \
@@ -409,4 +382,29 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     manifest_android.hardware.drm@1.2-service.widevine.xml \
-    vendor.qti.gnss@3.0-service.xml
+    vendor.qti.gnss@3.0-service.xml \
+    adsprpcd \
+    cnd \
+    dpmQmiMgr \
+    energy-awareness \
+    android.hardware.drm@1.2-service.widevine \
+    vendor.display.color@1.0-service \
+    vendor.qti.hardware.perf@1.0-service \
+    irsc_util \
+    loc_launcher \
+    lowi-server \
+    mm-pp-dpps \
+    netmgrd \
+    pm-proxy \
+    pm-service \
+    qseecomd \
+    qti \
+    rmt_storage \
+    sensors.qti \
+    slim_daemon \
+    tftp_server \
+    thermal-engine \
+    xtra-daemon \
+    xtwifi-client \
+    xtwifi-inet-agent \
+    dpmd
