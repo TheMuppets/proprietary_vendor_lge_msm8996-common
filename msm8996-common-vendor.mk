@@ -180,6 +180,7 @@ PRODUCT_PACKAGES += \
     libbccQTI \
     libc2d30_bltlib \
     libcir_driver \
+    libconfigdb \
     libdiag \
     libdsi_netctrl \
     libdsutils \
@@ -192,6 +193,7 @@ PRODUCT_PACKAGES += \
     libllvm-qcom \
     libmdmdetect \
     libmdsprpc \
+    libnetmgr \
     libperfgluelayer \
     libperipheral_client \
     libqcci_legacy \
@@ -269,7 +271,6 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
-    libconfigdb \
     libdataitems \
     libdisp-aba \
     libdpmqmihal \
@@ -285,7 +286,6 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
-    libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
